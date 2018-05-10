@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+'''
+6.1 创建列表
+'''
+fruit = ['apple','strawberry','pear','papaya']
+
+toppings = []
+
+times = ['morning','afternoon','evening','night']
+# times[1]
+# times[-1]
+
+number = [1,2,5,7,9]
+
+'''
+6.2 获取有关列表的信息
+'''
+number = [1,2,5,7,9]
+# len(number)                  获取列表中有多少项
+
+color_list = ['red','blue','magenta','red','yellow']
+# color_list.count('red')      统计列表中某各项的总数目
+# color_list.count('black')
+
+# color_list.index('blue')      返回该项在列表中第一次出现的索引位置
+
+'pink' in color_list          #判定某项是否在列表中
+'red' in color_list
+'Red' in color_list
+'red ' in color_list
+
+
+'''
+6.3 操作列表
+'''
+# append()用来在已有列表末尾增加一个项
+toppings = []
+toppings.append('pepperoni')
+toppings.append('mushrooms')   #  append() takes exactly one argument
+
+# extend()用来将一个列表加在另一个列表末尾
+order1 = ['pizza','fries','baklava']
+order2 = ['soda','lasagna']
+order1.extend(order2)
+
+# remove()删除第一个找到的项
+
+# insert()在指定位置处添加一个项
+colors = ['red','blue','magenta','red','yellow']
+colors.insert(1,'orange')
+
+'''
+6.4 列表中使用数学运算
+'''
+a = [1,2,3]
+b = [6,8,9]
+c = a+b         # 前后相连
+d = a*3         # 重复多次
+
+'''
+6.5  排序列表
+'''
+times = ['morning','afternoon','evening','night']
+times.reverse()         # 反转
+
+fruit = ['apple','strawberry','pear','papaya']
+fruit.sort()         # 按字母升序排序
+numbers = [40.2,39.1,42,58,17,9]
+numbers.sort()
+
+mixed = times+numbers
+#mixed.sort()
+
+
+
+
+
+
+fruit_requested = ['apple','strawberry','pear','papaya']
+fruit_bought1 = ['apple','strawberry','pear','papaya']
+fruit_bought2 = ['strawberry','apple','pear','papaya']
+
+fruit_requested == fruit_bought1 
+fruit_requested == fruit_bought2
