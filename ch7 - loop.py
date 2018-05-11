@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
+loop in python
 for {var} in {List}:
     code block
     code block
