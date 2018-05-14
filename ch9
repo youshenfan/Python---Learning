@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+
+'''
+dictionary
+'''
+states = {}
+# type(states)
+
+states = {"Virginia":"Richmond","Maryland":"Annapolis","New York":"Albany"}
+print states
+
+states['Oregon'] = 'Salem'     # 为字典添加键和值
+print states
+
+states.pop('Virginia')         # 删除/弹出字典中的键
+print states
+
+holidays = {'October':['Halloween','techies Day','Columbus Day']}
+birth = {1980:'Katie',2001:'Jacob',2008:'Hannah'}
+print holidays
+
+print birth
+
+
+# birth.has_key(1980)     True     用于判断字典里是否有该键
+# birth.has_key('1980')   False
+# 'Maryland' in states    True     也可用于判断字典里是否有该键
+
+states.keys()
+states.values()
